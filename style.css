@@ -1,0 +1,140 @@
+:root { /*São variaveis que colocamos no CSS para cores principais do nosso site */
+    --vermelho:var(rgb(138, 14, 14));
+    --preto:var(rgb(000, 000, 000));
+}
+
+
+/* Elementos principais */
+body {
+    background-image: linear-gradient(to right, #000000, #7c1313, #ff0000);
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    border: black;
+    
+}
+
+header .logo {
+        color: rgb(138, 14, 14);
+        font-family: Kanit, Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        border: rgb(000, 000, 000);     
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: #000000;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: rgb(0, 0, 0);
+}
+
+            /* Filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(img/capa-house.jpg);
+    height: 600px;
+    background-size: cover; /* tamanho da img e enquadramento.*/
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Coloca o item no inicio do container.*/
+}
+
+.filme-principal .descricao{
+    color: rgba(255, 255, 240, 0.5);
+       
+}
+
+.titulo{
+    font-size: 40px;
+    color: #ffffffe0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15%;
+}
+
+.button i{
+    margin-right: 8px;
+}
+
+.filme-principal .container{
+    margin: 20% 10% 5% 0%;;
+}
+
+.box-film{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel{
+    margin-top: 15px;
+}
+
+
+/* Login */ 
+
+.foo{
+    margin: center;
+}
+
+.N1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #000000, #7c1313, #ff0000);
+    height: 25vh;    
+}
+
+.N2{
+    background: #b1060f;
+    height: 125px;
+    width: 30px;
+    position: relative;
+}
+.N2::before{
+    background: #b1060f;
+    height: 125px;
+    width: 30px;
+    position: absolute;
+    content: '';
+    left: 50px;
+}
+.N2::after{
+    background: #7c1313;
+    height: 10px;
+    width: 87.5px;
+    position: absolute;
+    content: '';
+    left: -7.5px;
+    bottom: -5px;
+    border-radius: 50%;
+}
+
+.N3{
+    position: absolute;
+    height: 125px;
+    width: 30px;
+    background: #e50913;
+    left: 23px;
+    transform: skew(20deg);
+    box-shadow: 0 0 10px -4px;
+}
+
+
+
